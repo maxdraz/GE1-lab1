@@ -33,7 +33,7 @@ public class TankController : MonoBehaviour {
 
     public void Fire()
     {
-        Instantiate(bulletPrefab, bulletSpawn);
+        Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
     }
 
 }

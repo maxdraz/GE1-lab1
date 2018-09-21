@@ -20,7 +20,8 @@ public class SpawnWalls : MonoBehaviour {
                 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 cube.AddComponent<Rigidbody>();
                 //cube.GetComponent<Rigidbody>().isKinematic = true;
-                cube.GetComponent<Renderer>()
+                //cube.GetComponent<Renderer>().material.color
+                
                 cube.transform.position = new Vector3(myTransform.position.x + x * spacing, myTransform.position.y + y * spacing, myTransform.position.z);
                 //StartCoroutine(SwitchOnKinematic(2f, cube));
             }
